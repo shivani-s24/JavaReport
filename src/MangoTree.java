@@ -1,12 +1,19 @@
-public class MangoTree {
+import java.util.Scanner;
 
-    //for first row
-    //    if (r >= 1 && (r <= row))
-    //  {
-    //    System.out.println("Yes");
-    //   }
-    //
-    // else if( r% row ==  1 || r%row == 0 )
-    //  {
-    //     System.out.println("yes");
+public class MangoTree {
+    public static void main(String[] args) {
+        int rows, cols, Tree;
+        Scanner S = new Scanner(System.in);
+        rows = S.nextInt();
+        cols = S.nextInt();
+        Tree = S.nextInt();
+
+        if((Tree >= 1 && Tree <= cols) || (Tree % rows == 0) || (Tree % rows ==1 )){
+            System.out.println("Yes,It's a Mango Tree");
+        }
+        else{
+            System.out.println("No, It's not a Mango Tree");
+        }
+    }
+
 }

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
@@ -38,6 +40,9 @@ public class Assessment1Paypal {
     public static void main(String[] args) {
         Assessment1Paypal PP = new Assessment1Paypal();
         String s = "PAYPALISHIRING";
-        System.out.println(PP.PayPal(s,3));
+        System.out.println("Enter the Number of rows");
+        Scanner Sc = new Scanner(System.in);
+        int NumOfRows = Sc.nextInt();
+        System.out.println("PAYPALISHIRING is converted to " + PP.PayPal(s,NumOfRows));
     }
 }
